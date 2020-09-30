@@ -1,0 +1,30 @@
+PROCEDURE dot_product(v1,v2:vector)
+VAR
+v1(3) : reel
+v2(3) : reel
+p: reel
+i:integer
+BEGIN
+FOR i FROM 0 TO 2 STEP 1  DO
+    write ("donner l'element ',i+1,'de vecteur v1")
+    read ("v1(i)")
+    write ("donner l'element ',i+1,'de vecteur v2")
+    read ("v2(i)")
+    p:=0
+    FOR i FROM 0 TO 2 STEP 1  DO
+    p:=p+v1(i)*v2(i)
+    END_FOR
+END_FOR
+ALGORITHM ORTHOGONAL
+VAR
+    n: INTEGER
+    i:INTEGER
+BEGIN
+    FOR i FROM 1 TO n STEP 1  DO
+        IF (p:=0) THEN
+       return true
+       else 
+       return false 
+        END_IF
+    END_FOR
+END
